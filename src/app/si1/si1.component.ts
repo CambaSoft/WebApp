@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-si1',
@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./si1.component.css']
 })
 export class Si1Component implements OnInit {
-  title='Sistemas de Información I';
+  @Input() title: any;
+  servicios=[
+    "Proyecto (Laravel)",
+     "Documentación"
+  ];
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-ensamblador',
@@ -6,7 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ensamblador.component.css']
 })
 export class EnsambladorComponent implements OnInit {
-  title=' Programación Ensamblador';
+  @Input() title: any;
+  servicios=[
+    "Registros, Memoria, Operaciones",
+    "Preparación para Exámenes"
+  ];
   constructor() { }
 
   ngOnInit(): void {

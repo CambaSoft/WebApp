@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-compi',
@@ -6,7 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./compi.component.css']
 })
 export class CompiComponent implements OnInit {
-  title='Compiladores';
+
+  @Input() title: any;
+  servicios=[
+    "Codigo-3, Diagrama de Transición, BNF, Conjuntos First, Parser",
+    "Proyectos",
+    "Preparación para Exámenes"
+  ];
   constructor() { }
 
   ngOnInit(): void {

@@ -8,11 +8,8 @@
     </h6>
     <hr>
     <ul>
-      <li>
-        Proyecto (Laravel)
-      </li>
-      <li>
-        Documentación
+      <li *ngFor="let servicio of servicios">
+       {{servicio}}
       </li>
     </ul>
   </div>

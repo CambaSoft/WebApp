@@ -5,11 +5,8 @@
     </h6>
     <hr>
     <ul>
-      <li>
-        Laravel (backend)
-      </li>
-      <li>
-        Angular, React (frontend)
+      <li *ngFor="let servicio of servicios">
+        {{servicio}}
       </li>
     </ul>
   </div>

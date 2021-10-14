@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-tecnoweb',
@@ -6,8 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tecnoweb.component.css']
 })
 export class TecnowebComponent implements OnInit {
-  title='Tecnología Web';
-  constructor() { }
+  @Input() title: any;
+  servicios=[
+    "Proyectos"
+  ];
+  constructor() {
+   }
 
   ngOnInit(): void {
   }
