@@ -6,14 +6,8 @@
       </h6>
       <hr>
       <ul>
-        <li>
-          Recursion, Diagramas de Clases
-        </li>
-        <li>
-          Proyecto
-        </li>
-        <li>
-          Preparación para Exámenes
+        <li *ngFor="let servicio of servicios">
+          {{servicio}}
         </li>
       </ul>
     </div>

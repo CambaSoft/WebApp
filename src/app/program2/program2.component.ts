@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-program2',
@@ -6,7 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./program2.component.css']
 })
 export class Program2Component implements OnInit {
-  title='Programación II';
+  @Input() title: any;
+  servicios=[
+     "Recursion, Diagramas de Clases",
+      "Proyecto",
+      "Preparación para Exámenes"
+  ];
   constructor() {
   }
   ngOnInit(): void {

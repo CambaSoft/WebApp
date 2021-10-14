@@ -8,11 +8,8 @@
     </h6>
     <hr>
     <ul>
-      <li>
-        Registros, Memoria, Operaciones
-      </li>
-      <li>
-        Preparación para Exámenes
+      <li *ngFor="let servicio of servicios">
+        {{servicio}}
       </li>
     </ul>
   </div>

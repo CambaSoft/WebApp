@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-ed1',
@@ -6,7 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ed1.component.css']
 })
 export class Ed1Component implements OnInit {
-  title='Estructura de datos I';
+  @Input() title: any;
+  servicios=[
+    "Bitwise, TDA, Listas, Colas, Pilas",
+    "Proyecto",
+    "Preparación para Exámenes"
+  ];
   constructor() { }
 
   ngOnInit(): void {

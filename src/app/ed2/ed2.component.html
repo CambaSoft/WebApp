@@ -5,14 +5,8 @@
     </h6>
     <hr>
     <ul>
-      <li>
-        Arboles, Grafos, Generics
-      </li>
-      <li>
-        Proyectos
-      </li>
-      <li>
-        Preparación para Exámenes
+      <li *ngFor="let servicio of servicios">
+        {{servicio}}
       </li>
     </ul>
   </div>
