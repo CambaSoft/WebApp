@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class Program2Component implements OnInit {
   @Input() title: any;
   @Input()
-  servicios!: Array<any>;
+  servicios!: Array<string>;
   constructor() {}
   ngOnInit(): void {}
 }
