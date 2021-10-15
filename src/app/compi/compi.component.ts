@@ -8,11 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class CompiComponent implements OnInit {
 
   @Input() title: any;
-  servicios=[
-    "Codigo-3, Diagrama de Transición, BNF, Conjuntos First, Parser",
-    "Proyectos",
-    "Preparación para Exámenes"
-  ];
+  @Input() servicios!: Array<string>;
   constructor() { }
 
   ngOnInit(): void {

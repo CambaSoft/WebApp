@@ -7,11 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class Ed1Component implements OnInit {
   @Input() title: any;
-  servicios=[
-    "Bitwise, TDA, Listas, Colas, Pilas",
-    "Proyecto",
-    "Preparación para Exámenes"
-  ];
+  @Input() servicios!: Array<any>;
   constructor() { }
 
   ngOnInit(): void {

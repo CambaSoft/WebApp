@@ -7,11 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class Ed2Component implements OnInit {
   @Input() title: any;
-  servicios=[
-    "Arboles, Grafos, Generics",
-    "Proyectos",
-    "Preparación para Exámenes"
-  ];
+  @Input() servicios!: Array<string>;
   constructor() { }
 
   ngOnInit(): void {
