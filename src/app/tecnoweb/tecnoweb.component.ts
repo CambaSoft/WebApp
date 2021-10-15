@@ -7,9 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class TecnowebComponent implements OnInit {
   @Input() title: any;
-  servicios=[
-    "Proyectos"
-  ];
+  @Input() servicios!: Array<any>;
   constructor() {
    }
 

@@ -7,10 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class Si1Component implements OnInit {
   @Input() title: any;
-  servicios=[
-    "Proyecto (Laravel)",
-     "Documentación"
-  ];
+  @Input() servicios!: Array<any>;
   constructor() { }
 
   ngOnInit(): void {

@@ -7,10 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class Si2Component implements OnInit {
   @Input() title: any;
-  servicios=[
-    "Laravel (backend)",
-    "Angular, React (frontend)"
-  ];
+  @Input() servicios!: Array<any>;
   constructor() { }
 
   ngOnInit(): void {
