@@ -1,15 +1,15 @@
 <div class="row align-items-center">
   <div class="col">
-    <img src="assets/images/products/si-icon.png" width="100%">
+    <img src="{{imageUrl}}" width="100%">
   </div>
   <div class="col-8">
     <h6>
-      {{title}}
+     {{title}}
     </h6>
     <hr>
     <ul>
       <li *ngFor="let servicio of servicios">
-       {{servicio}}
+        {{servicio}}
       </li>
     </ul>
   </div>
