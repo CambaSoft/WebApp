@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TecnowebComponent } from './tecnoweb.component';
+import { Columna2Component } from './columna2.component';
 
-describe('TecnowebComponent', () => {
-  let component: TecnowebComponent;
-  let fixture: ComponentFixture<TecnowebComponent>;
+describe('Columna2Component', () => {
+  let component: Columna2Component;
+  let fixture: ComponentFixture<Columna2Component>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TecnowebComponent ]
+      declarations: [ Columna2Component ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TecnowebComponent);
+    fixture = TestBed.createComponent(Columna2Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

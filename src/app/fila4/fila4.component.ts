@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Fila4Component implements OnInit {
   si2 = ['Laravel (backend)', 'Angular, React (frontend)'];
-  tecnoweb = ['Proyectos'];
+  tecnoweb = ["Proyectos"];
 
   constructor() {}
 

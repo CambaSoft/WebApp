@@ -6,12 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fila3.component.css'],
 })
 export class Fila3Component implements OnInit {
-  si = [
+  compi = [
     'Codigo-3, Diagrama de Transición, BNF, Conjuntos First, Parser',
     'Proyectos',
     'Preparación para Exámenes',
   ];
-  compi = ['Proyecto (Laravel)', 'Documentación'];
+  si = ['Proyecto (Laravel)', 'Documentación'];
   constructor() {}
 
   ngOnInit(): void {}
