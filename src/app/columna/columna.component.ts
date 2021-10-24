@@ -1,11 +1,12 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-columna2',
-  templateUrl: './columna2.component.html',
-  styleUrls: ['./columna2.component.css']
+  selector: 'app-columna',
+  templateUrl: './columna.component.html',
+  styleUrls: ['./columna.component.css']
 })
-export class Columna2Component implements OnInit {
+export class ColumnaComponent implements OnInit {
+  @Input() type!: boolean;
   @Input() title: any;
   @Input() servicios!: Array<string>;
   @Input() imageUrl!: string;

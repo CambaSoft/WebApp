@@ -9,8 +9,7 @@ import { Fila2Component } from './fila2/fila2.component';
 import { Fila3Component } from './fila3/fila3.component';
 import { Fila4Component } from './fila4/fila4.component';
 import { BarrainferiorComponent } from './barrainferior/barrainferior.component';
-import { Columna1Component } from './columna1/columna1.component';
-import { Columna2Component } from './columna2/columna2.component';
+import { ColumnaComponent } from './columna/columna.component';
 
 
 
@@ -24,8 +23,7 @@ import { Columna2Component } from './columna2/columna2.component';
     Fila3Component,
     Fila4Component,
     BarrainferiorComponent,
-    Columna1Component,
-    Columna2Component,
+    ColumnaComponent,
   ],
   imports: [
     BrowserModule
