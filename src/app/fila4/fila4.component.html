@@ -1,16 +1,18 @@
 <div class="row my-2">
   <div class="col-12 col-md-6 py-3 bg-camsof rounded-3 text-white">
-    <app-columna1
+    <app-columna
       title="Sistemas de Información II"
       [servicios]="si2"
       imageUrl="assets/images/products/information-system-ii-icon.png"
-    ></app-columna1>
+      [type]="true"
+    ></app-columna>
   </div>
   <div class="col-12 col-md-6 py-3">
-    <app-columna2
+    <app-columna
       title="Tecnología Web"
       [servicios]="tecnoweb"
       imageUrl="assets/images/products/web-icon.png"
-    ></app-columna2>
+      [type]="false"
+    ></app-columna>
   </div>
 </div>
