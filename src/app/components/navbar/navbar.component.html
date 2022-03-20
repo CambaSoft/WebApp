@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-sm navbar-light bg-camsof p-0">
+    <div class="container-fluid">
+        <div class="row p-0">
+            <a class="navbar-brand d-flex" href="index.html">
+                <img src="assets/images/pp-circle.png" width="40rem" height="40rem"
+                    class="d-inline-block align-text-top my-auto">
+                <div class="ms-2 my-auto fs-5 text-white">
+                    CambaSoft
+                </div>
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li *ngIf="!isLoggedIn" class="nav-item">
+                    <a class="nav-link text-white" aria-current="page" routerLink="register">
+                        Registrate
+                    </a>
+                </li>
+                <li *ngIf="!isLoggedIn" class="nav-item">
+                    <a class="nav-link text-white" routerLink="login">
+                        Iniciá Sesión
+                    </a>
+                </li>
+                <li *ngIf="isLoggedIn" class="nav-item">
+                    <img [src]="user.photoUrl" width="40rem" height="40rem" class="rounded-circle">
+                </li>
+                <li *ngIf="isLoggedIn" class="nav-item dropdown">
+                    <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        {{ user.firstName}}
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end"
+                        aria-labelledby="navbarDarkDropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item" href="">
+                                Perfil
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" (click)="logout()" href="">
+                                Cerrar Sesión
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

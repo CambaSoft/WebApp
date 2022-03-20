@@ -1,25 +1,5 @@
- <!--barrita superior de la página-->
- <app-barrasuperior></app-barrasuperior>
-<div class="container py-3">
-  <!--General Programming-->
-  <app-general></app-general>
-  <!--U.A.G.R.M-->
-   <div class="row bg-dark text-white rounded-3 text-center py-2 my-2">
-    <h2>
-     {{title}}
-    </h2>
-  </div>
-  <!-- Programming II -->
-  <!-- Data Structures I -->
-  <app-fila1></app-fila1>
-  <!-- Data Structures II -->
-  <!-- Assembler programming -->
-  <app-fila2></app-fila2>
-  <!-- Compilers-->
-  <!-- Information System I -->
-  <app-fila3></app-fila3>
-  <!-- Information System II -->
-  <!-- Web Technology -->
-  <app-fila4></app-fila4>
+<div class="sections">
+    <app-navbar></app-navbar>
+    <router-outlet style="display: none;"></router-outlet>
+    <app-footer></app-footer>
 </div>
-<app-barrainferior></app-barrainferior>
