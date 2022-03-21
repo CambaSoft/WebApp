@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  min-height: 100vh;
+  background-color: #fafafa;
+}
+
+.bg-camsof {
+  background-color: #007a3d !important;
+}
+
+.border-camsof {
+  border-color: #007a3d !important;
+}
+
