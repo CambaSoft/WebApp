@@ -35,7 +35,7 @@ export class LoginComponent {
                 this.router.navigate(['home']);
               },
               (error) => {
-                this.toastrService.error('Ha ocurrido un problema.');
+                this.toastrService.error('Usuario no registrado.');
               }
             );
           }
