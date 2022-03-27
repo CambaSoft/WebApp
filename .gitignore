@@ -46,3 +46,4 @@ Thumbs.db
 
 # Cambasoft
 .env
+/src/environments/*

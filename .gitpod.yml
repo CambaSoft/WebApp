@@ -1,0 +1,35 @@
+tasks:
+  - name: Configure Wakatime
+    command: |
+      echo "[settings]" >> /home/gitpod/.wakatime.cfg
+      echo "api_key = $WAKATIME_API_KEY" >> /home/gitpod/.wakatime.cfg
+      exit
+
+  - name: Install Dependencies
+    command: |
+      npm install
+      gp sync-done install-dependencies
+      exit
+
+  - name: Configuring Angular Project
+    command: |
+      gp sync-await install-dependencies
+      echo "WEB_SERVICES_URL=$WEB_SERVICES_URL" >> .env
+      echo "GOOGLE_CLIENT_ID=$GOOGLE_CLIENT_ID" >> .env
+      gp sync-done configure-project
+      exit
+
+  - name: Run project
+    command: |
+      gp sync-await configure-project
+      npm start
+
+vscode:
+  extensions:
+    - alefragnani.bookmarks
+    - eamodio.gitlens
+    - esbenp.prettier-vscode
+    - wakatime.vscode-wakatime
+    - github.vscode-pull-request-github
+    - equinusocio.vsc-material-theme-icons
+    - a5hk.night-coder
